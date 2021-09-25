@@ -1,0 +1,246 @@
+.teddy-collection {
+    padding: 50px 0 80px;
+    background-color: rgb(247, 247, 247);      
+}
+
+.intro__bottom {
+    padding: 33px 15px 68px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro__title {
+    font-size: 48px;
+    font-family: "CenturyGothicPro";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.354;
+    text-align: center;
+            
+}
+
+.intro__subtitle {
+    font-size: 18px;
+    font-family: "CenturyGothicPro";
+    color: rgb(0, 0, 0);
+    line-height: 1.333;
+    text-align: center;
+}
+
+.intro__buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teddy__btn {
+    margin: 0 37px;
+    min-width: 280px;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-family: "CenturyGothicPro";
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    transition: all .2s ease-in 0s;
+}
+
+.teddy__btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.btn__black {
+    background-color: #000;
+    color: #fff;
+}
+
+.custom__btn {
+    text-decoration: none;
+}
+
+.teddy__pretitle {
+    font-size: 20px;
+    font-family: "CenturyGothicPro";
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;    
+}
+
+.teddy__title {
+    font-size: 35px;
+    font-family: "CenturyGothicPro";
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;    
+    margin-top: 25px;
+}
+
+.teddy__body {
+    margin-top: 40px;
+}
+
+.teddy__background {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    max-width: 1147px;
+}
+
+.mini__polygon {
+    position: absolute;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.mini__polygon::before,
+.mini__polygon::after {
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute; 
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.mini__polygon::before {
+    top: -25px;
+    border-bottom: 25px solid #fff;
+}
+
+.mini__polygon::after {
+    bottom: -25px;
+    border-bottom: 25px solid #fff;
+}
+
+.mini__polygon.left {
+    left: -15%;
+}
+
+.mini__polygon.center {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mini__polygon.right {
+    right: -15%;
+}
+
+.mini__polygon.top {
+    top: 12%;
+}
+
+.mini__polygon.bottom {
+    bottom: 12%;
+}
+
+.mini__polygon__title {
+    font-size: 40px;
+    font-family: "CenturyGothicPro";
+    line-height: 45px;
+    text-align: center;
+}
+.mini__polygon__btn {
+    font-size: 24px;
+    font-family: "CenturyGothicPro";
+    line-height: 28px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.mini__polygon__link {
+    text-decoration: none;
+}
+
+.teddy__img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.background__polygon {
+    background-image: url(../image/polygon_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.teddy__bottom {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1339px;
+    padding: 28px;
+    position: relative;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.polygon__block {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.polygon__block__left {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.polygon__block__right {
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+
+.polygon__pretitle {
+    font-size: 20px;
+    font-family: "CenturyGothicPro";
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 40px;
+    text-align: center;
+}
+
+.polygon__title {
+    font-size: 35px;
+    font-family: "CenturyGothicPro";
+    color: #000;
+    line-height: 40px;
+    text-align: center;
+}
+
+.polygon__mini__image {
+    margin-top: auto;
+}
+
+.polygon__image {
+    width: 50%;
+}
+
+.polygon__image__right {
+    order: 1;
+}
+
+.polygon__image__left {
+    order: -1;
+}
