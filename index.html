@@ -180,7 +180,8 @@
     <div id="wrapper" class="pt_storefront">
     <div class="b-site_header-placeholder js-sticky_header-wrapper" style="height: 101px;">
     <div class="b-site_header-wrapper">
-    <header class="b-site_header js-sticky_header clearfix" id="header" role="banner">
+
+    <header class="b-site_header js-sticky_header clearfix with__banner" id="header" role="banner">
     
     
     
@@ -4666,13 +4667,94 @@
     <div class="b-homepage">
     <div class="b-content">
 
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="6c5c0878c83f3baff793f37026" -->
-
+    <div class="content-asset">
+      <!-- dwMarker="content" dwContentID="6c5c0878c83f3baff793f37026" -->
+      <div class="content-asset"><!-- dwMarker="content" dwContentID="b85d792383fcbb1b5ecc59f3f1" -->
+        <style>
+        #milan-show-wrap{
+            font-family: aktiv-grotesk, sans-serif!important;
+            text-transform: uppercase;
+            padding: 145px 1.5rem 100px;
+            text-align: center;
+            background: #000000;
+            color: #ffffff;	
+            margin-bottom: 0;
+        }
+        #milan-show-wrap h1{
+            font-family: aktiv-grotesk, sans-serif;
+            font-size: 6rem;
+            line-height: 80%;
+            font-weight: 400;
+            word-spacing: 0.16rem;
+        }
+        #milan-show-wrap h2{
+            font-family: century-gothic, Arial, sans-serif;
+            font-size: 3rem;
+            line-height: 80%;
+            font-weight: 800;
+            word-spacing: 1rem;
+            word-spacing: inherit;
+        }
+        #milan-show-wrap h3{
+            font-family: century-gothic, Arial, sans-serif;
+            font-size: 3rem;
+            line-height: 160%;
+            font-weight: 400;
+            word-spacing: 1rem;
+            display: inline-block;
+            margin: 1rem 0 0;
+            word-spacing: inherit;
+        }
+        #milan-show-wrap h3 span{
+            display: inline-block;
+        }
+        @media screen and (max-width: 1024px) {
+            #milan-show-wrap{
+                padding: 2.5rem 1.5rem;
+            }
+            #milan-show-wrap h1{
+                font-size: 4rem;
+            }
+            #milan-show-wrap h2{
+                font-size: 2rem;
+            }
+            #milan-show-wrap h3{
+                font-size: 2rem;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            #milan-show-wrap h1{
+                font-size: 2rem;
+            }
+            #milan-show-wrap h2{
+                font-size: 1rem;
+            }
+            #milan-show-wrap h3{
+                font-size: 1rem;
+            }
+            #milan-show-wrap{
+                padding: 7.5rem 1.5rem 2.5rem;
+            }
+        }
+        
+        </style>
+        <div id="milan-show-wrap">
+        <h1>
+        
+        <div class="content-asset sale"><!-- dwMarker="content" dwContentID="714d48e198914e3f0af7f97107" -->
+        SALE
+        </div> <!-- End content-asset -->
+        
+        
+        
+        </h1>
+        </div><!--milan-show-wrap-->
+        </div> <!-- End content-asset -->
     
     <div class="content-asset"><!-- dwMarker="content" dwContentID="6bcc91a30467bd2deef719585b" -->
     <style>
     .fashionshow {
-        font-family: aktiv-grotesk, sans-serif;
+        font-family: "Century Gothic", sans-serif;
         text-transform: uppercase;
         padding: 2.5rem 1.5rem;
         text-align: center;
@@ -4688,25 +4770,25 @@
     }
     
     .fashionshow-countdown-text{
-        font-family: century-gothic, Arial, sans-serif;
+        font-family: "Century Gothic", Arial, sans-serif;
         font-size: 2rem;
         line-height: 105%;
     }
     .fashionshow-countdown-block {
-        font-family: aktiv-grotesk, sans-serif;
-        font-size: 6rem;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 34px;
         line-height: 80%;
-        font-weight: 400;
+        font-weight: bold;
         /*padding: 1rem 0 0;*/
-        word-spacing: 0.16rem;
+        word-spacing: 1.16rem;
         display: inline-block;
     }
     .fashionshow-countdown-hours{
-        margin: 1rem 0 0;
+        margin: 0 0 1rem;
     }
     .fashionshow-countdown-hours div{
         text-align: center;
-        min-width: 11.4rem;
+        min-width: 7.4rem;
         font-size: .9rem;
         line-height: 100%;
     }
@@ -4757,13 +4839,13 @@
     </style>
     <div class="fashionshow">
        <h4 class="fashionshow-countdown-wrap">
-          <div class="fashionshow-countdown-block">00 : 00 : 00 : 00</div>
           <div class="fashionshow-countdown-hours">
-          <div style="display: inline-block;">days</div>
-          <div style="display: inline-block;">hours</div>
-          <div style="display: inline-block;">minutes</div>
-          <div style="display: inline-block;">seconds</div>
+            <div style="display: inline-block;">days</div>
+            <div style="display: inline-block;">hours</div>
+            <div style="display: inline-block;">minutes</div>
+            <div style="display: inline-block;">seconds</div>
           </div>
+          <div class="fashionshow-countdown-block">00 : 00 : 00 : 00</div>
        </h4>
     </div>
     <script src="https://www.plein.com/on/demandware.static/-/Library-Sites-philipp-plein-shared-library/en_RU/v1632519119475/js/jquery.slim.js"></script>
@@ -4771,7 +4853,7 @@
     <script src="https://www.plein.com/on/demandware.static/-/Library-Sites-philipp-plein-shared-library/en_RU/v1632519119475/js/jquery.countdown.js"></script>
     <script src="https://www.plein.com/on/demandware.static/-/Library-Sites-philipp-plein-shared-library/en_RU/v1632519119475/js/moment-timezone.js"></script>
     <script>
-       var nextYear = moment.tz("2021-09-26 21:00", "Europe/Paris");
+       var nextYear = moment.tz("2021-09-28 21:00", "Europe/Paris");
          $('.fashionshow-countdown-block').countdown(nextYear.toDate(), function(event) {
              $(this).html(event.strftime('%D &#58; %H &#58; %M &#58; %S'));
         }).on('finish.countdown', function() {
@@ -4783,160 +4865,19 @@
     </script>
     </div> <!-- End content-asset -->
     
-    
-    
-    
-    <style>
-    .iframe-wrap{
-        padding: 0;
-        margin: 0;
-        position:relative;
-        padding-top:41.6%;
-    }
-    .iframe-wrap iframe {
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        padding: 0;
-        margin: 0;	
-    }
-    
-    .dfc-title {
-        width: 100%;
-        padding: 2rem 1rem;
-        font-family: aktiv-grotesk, sans-serif!important;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    
-    h2.dfc-title-preheader {
-        font-size: 1.5rem;
-        line-height: 110%;
-    }
-    
-    h1.dfc-title-header {
-        font-size: 2.5rem;
-        font-weight: 700;
-        line-height: 110%;
-        letter-spacing: .1rem;
-    }
-    
-    @media screen and (max-width: 768px) {
-        .iframe-wrap{
-            padding: 0;
-            margin: 0;
-            position:relative;
-            padding-top:56.25%;
-        }
-        .iframe-wrap iframe {
-            min-height: auto;
-        }
-    
-        .dfc-title {
-        
-        }
-        h2.dfc-title-preheader {
-            font-size: 1rem;
-        }
-    
-        h1.dfc-title-header {
-            font-size: 1.7rem;
-            letter-spacing: 0rem;
-        }	
-    }
-    </style>
+    <div class="content-asset">
+          <div class="intro__bottom countdown__bottom">
+              <div class="intro__buttons">
+                  <a href="#" class="teddy__btn btn__white custom__btn">
+                      <div>MEN</div>
+                  </a>
+                  <a href="#" class="teddy__btn btn__white custom__btn">
+                      <div>WOMEN</div>
+                  </a>
+              </div>
+          </div>
+  </div>
 
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="b85d792383fcbb1b5ecc59f3f1" -->
-    <style>
-    #milan-show-wrap{
-        font-family: aktiv-grotesk, sans-serif!important;
-        text-transform: uppercase;
-        padding: 3.5rem 1.5rem;
-        text-align: center;
-        background: #000000;
-        color: #ffffff;	
-        margin-bottom: 3rem;
-    }
-    #milan-show-wrap h1{
-        font-family: aktiv-grotesk, sans-serif;
-        font-size: 6rem;
-        line-height: 80%;
-        font-weight: 400;
-        word-spacing: 0.16rem;
-    }
-    #milan-show-wrap h2{
-        font-family: century-gothic, Arial, sans-serif;
-        font-size: 3rem;
-        line-height: 80%;
-        font-weight: 800;
-        word-spacing: 1rem;
-        word-spacing: inherit;
-    }
-    #milan-show-wrap h3{
-        font-family: century-gothic, Arial, sans-serif;
-        font-size: 3rem;
-        line-height: 160%;
-        font-weight: 400;
-        word-spacing: 1rem;
-        display: inline-block;
-        margin: 1rem 0 0;
-        word-spacing: inherit;
-    }
-    #milan-show-wrap h3 span{
-        display: inline-block;
-    }
-    @media screen and (max-width: 1024px) {
-        #milan-show-wrap{
-            padding: 2.5rem 1.5rem;
-        }
-        #milan-show-wrap h1{
-            font-size: 4rem;
-        }
-        #milan-show-wrap h2{
-            font-size: 2rem;
-        }
-        #milan-show-wrap h3{
-            font-size: 2rem;
-        }
-    }
-    @media screen and (max-width: 768px) {
-        #milan-show-wrap h1{
-            font-size: 2rem;
-        }
-        #milan-show-wrap h2{
-            font-size: 1rem;
-        }
-        #milan-show-wrap h3{
-            font-size: 1rem;
-        }
-    }
-    
-    </style>
-    <div id="milan-show-wrap">
-    <h1>
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="714d48e198914e3f0af7f97107" -->
-    MILAN FASHION WEEK
-    </div> <!-- End content-asset -->
-    
-    
-    
-    </h1>
-    </div><!--milan-show-wrap-->
-    </div> <!-- End content-asset -->
-    
-    
-    
-    
     </div> <!-- End content-asset -->
     
     
@@ -4978,25 +4919,27 @@
             <div class="teddy__body">
                 <div class="teddy__background">
                     <img src="/image/image_1.png" alt="image_1" class="teddy__img">
-                    <div class="mini__polygon left center">
-                        <a href="#"><img src="/image/mini_1.png" alt="mini_1"></a>
-                        <a href="#" class="mini__polygon__link mini__polygon__title">Hoodies</a>
-                        <a href="#" class="mini__polygon__link mini__polygon__btn">SHOP NOW</a>
-                    </div>
-                    <div class="mini__polygon right top">
-                        <a href="#"><img src="/image/mini_2.png" alt="mini_2"></a>
-                        <a href="#" class="mini__polygon__link mini__polygon__title">Jackets</a>
-                        <a href="#" class="mini__polygon__link mini__polygon__btn">SHOP NOW</a>
-                    </div>
-                    <div class="mini__polygon right bottom">
-                        <a href="#"><img src="/image/mini_3.png" alt="mini_3"></a>
-                        <a href="#" class="mini__polygon__link mini__polygon__title">Shoes</a>
-                        <a href="#" class="mini__polygon__link mini__polygon__btn">SHOP NOW</a>
-                    </div>
+                </div>
+                <div class="teddy__background__mini">
+                  <div class="mini__polygon left center">
+                    <a href="#"><img src="/image/mini_1.png" alt="mini_1"></a>
+                    <a href="#" class="mini__polygon__link mini__polygon__title">Hoodies</a>
+                    <a href="#" class="mini__polygon__link mini__polygon__btn">SHOP NOW</a>
+                  </div>
+                  <div class="mini__polygon right top">
+                      <a href="#"><img src="/image/mini_2.png" alt="mini_2"></a>
+                      <a href="#" class="mini__polygon__link mini__polygon__title">Jackets</a>
+                      <a href="#" class="mini__polygon__link mini__polygon__btn">SHOP NOW</a>
+                  </div>
+                  <div class="mini__polygon right bottom">
+                      <a href="#"><img src="/image/mini_3.png" alt="mini_3"></a>
+                      <a href="#" class="mini__polygon__link mini__polygon__title">Shoes</a>
+                      <a href="#" class="mini__polygon__link mini__polygon__btn">SHOP NOW</a>
+                  </div>
                 </div>
             </div>
             <div class="teddy__bottom background__polygon">
-                <div class="polygon__block__left">
+                <div class="polygon__block polygon__block__left">
                     <p class="polygon__pretitle">Spring summer 2020</p>
                     <p class="polygon__title">Hot Stuff</p>
                     <img src="/image/image_3.png" alt="image_3" class="polygon__mini__image">
@@ -5004,14 +4947,29 @@
                 <img src="/image/image_2.png" alt="image_3" class="polygon__image polygon__image__right">
             </div>
         </div>
-    </div>
-    <div class="content-asset">
         <div class="teddy-collection">
             <p class="teddy__pretitle">pre-fall 2020</p>
             <p class="teddy__title">Teddy Bear Collection</p>
             <div class="teddy__body">
                 <div class="teddy__background">
                     <img src="/image/image_4.png" alt="image_4" class="teddy__img">
+                </div>
+                <div class="teddy__background__mini">
+                  <div class="mini__polygon left top">
+                    <a href="#"><img src="/image/mini_4.png" alt="mini_4"></a>
+                    <a href="#" class="mini__polygon__link mini__polygon__title">Jackets</a>
+                    <a href="#" class="mini__polygon__link mini__polygon__btn">SHOP NOW</a>
+                  </div>
+                  <div class="mini__polygon right center">
+                      <a href="#"><img src="/image/mini_6.png" alt="mini_6"></a>
+                      <a href="#" class="mini__polygon__link mini__polygon__title">Denim</a>
+                      <a href="#" class="mini__polygon__link mini__polygon__btn">SHOP NOW</a>
+                  </div>
+                  <div class="mini__polygon left bottom">
+                      <a href="#"><img src="/image/mini_5.png" alt="mini_5"></a>
+                      <a href="#" class="mini__polygon__link mini__polygon__title">High Heels</a>
+                      <a href="#" class="mini__polygon__link mini__polygon__btn">SHOP NOW</a>
+                  </div>
                 </div>
             </div>
             <div class="teddy__bottom background__polygon">
@@ -5024,6 +4982,14 @@
             </div>
         </div>
     </div>
+    <!-- top banner -->
+    <div class="top-banner">
+      <div class="top-banner-wrapper">
+        <div class="top-banner__close" data-type="close">&times;</div>
+        <p class="top-banner__text">Free shipping on all orders</p>
+      </div>
+    </div>
+    <!-- /top banner -->
     <!-- /alxbychkov -->
 
 
@@ -6951,5 +6917,6 @@
     <script>
     window[window.TiktokAnalyticsObject].instance("BUL90A38QOHHO3L8521G").track("Browse",{"pixelMethod":"standard"});
     </script>
-    <iframe height="0" width="0" title="Criteo DIS iframe" style="display: none;"></iframe></body>
+    <script src="/js/index.js"></script>
+  </body>
 </html>

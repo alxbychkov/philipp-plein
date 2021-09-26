@@ -3,31 +3,42 @@
     background-color: rgb(247, 247, 247);      
 }
 
+.countdown__bottom,
 .intro__bottom {
-    padding: 33px 15px 68px;
-    background-color: #fff;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.intro__bottom {
+    background-color: #fff;
+    padding: 33px 15px 68px;
+}
+
+.countdown__bottom {
+    background-color: #000;
+    padding: 30px 15px 45px;
+    margin-bottom: 1rem;
+}
+
 .intro__title {
     font-size: 48px;
-    font-family: "CenturyGothicPro";
+    font-family: "Century Gothic";
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.354;
+    line-height: 1.354em;
     text-align: center;
             
 }
 
 .intro__subtitle {
     font-size: 18px;
-    font-family: "CenturyGothicPro";
+    font-family: "Century Gothic";
     color: rgb(0, 0, 0);
-    line-height: 1.333;
+    line-height: 1.333em;
     text-align: center;
 }
 
@@ -38,6 +49,10 @@
     align-items: center;
 }
 
+.countdown__bottom .intro__buttons {
+    margin-top: 0;
+}
+
 .teddy__btn {
     margin: 0 37px;
     min-width: 280px;
@@ -45,21 +60,38 @@
     text-align: center;
     display: block;
     font-size: 16px;
-    font-family: "CenturyGothicPro";
+    font-family: "Century Gothic";
     font-weight: bold;
     text-transform: uppercase;
     border: 1px solid #000;
     transition: all .2s ease-in 0s;
 }
 
-.teddy__btn:hover {
+.countdown__bottom .teddy__btn {
+    margin: 0 30px;
+    min-width: 220px;
+    padding: 10px 15px;
+}
+
+.teddy__btn.btn__black:hover {
     color: #000;
     background-color: #fff;
+}
+
+.teddy__btn.btn__white:hover {
+    color: #fff;
+    background-color: #000;
 }
 
 .btn__black {
     background-color: #000;
     color: #fff;
+}
+
+.btn__white {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
 }
 
 .custom__btn {
@@ -68,7 +100,7 @@
 
 .teddy__pretitle {
     font-size: 20px;
-    font-family: "CenturyGothicPro";
+    font-family: "Century Gothic";
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
@@ -78,7 +110,7 @@
 
 .teddy__title {
     font-size: 35px;
-    font-family: "CenturyGothicPro";
+    font-family: "Century Gothic";
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
@@ -89,6 +121,7 @@
 
 .teddy__body {
     margin-top: 40px;
+    position: relative;
 }
 
 .teddy__background {
@@ -98,9 +131,19 @@
     max-width: 1147px;
 }
 
+.teddy__background__mini {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 1767px;
+    margin: 0 auto;
+}
+
 .mini__polygon {
     position: absolute;
-    padding: 28px;
+    padding: 28px 150px;
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -108,29 +151,8 @@
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
-.mini__polygon::before,
-.mini__polygon::after {
-    content: "";
-    width: 0; 
-    height: 0;
-    position: absolute; 
-    left: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-}
-
-.mini__polygon::before {
-    top: -25px;
-    border-bottom: 25px solid #fff;
-}
-
-.mini__polygon::after {
-    bottom: -25px;
-    border-bottom: 25px solid #fff;
-}
-
 .mini__polygon.left {
-    left: -15%;
+    left: 0;
 }
 
 .mini__polygon.center {
@@ -139,7 +161,7 @@
 }
 
 .mini__polygon.right {
-    right: -15%;
+    right: 0;
 }
 
 .mini__polygon.top {
@@ -152,16 +174,17 @@
 
 .mini__polygon__title {
     font-size: 40px;
-    font-family: "CenturyGothicPro";
+    font-family: "Century Gothic";
     line-height: 45px;
     text-align: center;
 }
 .mini__polygon__btn {
     font-size: 24px;
-    font-family: "CenturyGothicPro";
+    font-family: "Century Gothic";
     line-height: 28px;
     text-align: center;
     font-weight: 900;
+    margin-top: 10px;
 }
 
 .mini__polygon__link {
@@ -213,7 +236,7 @@
 
 .polygon__pretitle {
     font-size: 20px;
-    font-family: "CenturyGothicPro";
+    font-family: "Century Gothic";
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
@@ -223,7 +246,7 @@
 
 .polygon__title {
     font-size: 35px;
-    font-family: "CenturyGothicPro";
+    font-family: "Century Gothic";
     color: #000;
     line-height: 40px;
     text-align: center;
@@ -243,4 +266,218 @@
 
 .polygon__image__left {
     order: -1;
+}
+
+.b-footer-social {
+    border-top: 2px solid #000;
+}
+
+.b-footer {
+    padding-top: 95px;
+}
+
+.sale {
+    font-size: 121.643px;
+    font-family: 'aktiv-grotesk', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.028em;
+}
+
+.fashionshow-countdown-block {
+    font-family: "Century Gothic", sans-serif;
+}
+
+.top-banner {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+}
+
+.top-banner-wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+
+.top-banner__text {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.top-banner__close {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 31px;
+    cursor: pointer;
+}
+
+#header.with__banner {
+    margin-top: 38px;
+}
+
+@media screen and (min-width: 768px) {
+    .b-footer-social,
+    .b-newsletter {
+        padding: 60px 0;  
+    }
+
+    .b-footer_menu {
+        padding: 60px 0 70px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mini__polygon img {
+        max-height: 200px;
+    }
+
+    .mini__polygon__title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .mini__polygon__btn {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .mini__polygon {
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro__title {
+        font-size: 34px;
+    }
+
+    .teddy__title {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+
+    .teddy__pretitle {
+        font-size: 18px;
+    }
+
+    .intro__subtitle {
+        font-size: 16px;
+    }
+
+    .b-footer {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .intro__buttons {
+        flex-wrap: wrap;
+    }
+
+    .countdown__bottom .teddy__btn,
+    .teddy__btn {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .intro__bottom {
+        padding-bottom: 38px;
+    }
+
+    .top-banner__close {
+        top: -1px;
+        right: 10px;
+    }
+
+    .polygon__pretitle {
+        font-size: 16px;
+    }
+
+    .polygon__pretitle {
+        line-height: 18px;
+    }
+
+    .polygon__title {
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 5px;
+    }
+
+    .teddy__bottom {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .polygon__block {
+        margin: 0;
+        width: 33%;
+    }
+
+    .polygon__image {
+        width: 63%;
+    }
+
+    .background__polygon {
+        background: #fff;
+    }
+
+    .teddy-collection:not(:last-of-type) {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .mini__polygon img {
+        max-height: 120px;
+    }
+
+    .mini__polygon {
+        padding: 16px 80px;
+    }
+
+    .mini__polygon__title {
+        margin-top: 15px;
+    }
+
+    .mini__polygon.top {
+        top: 4%;
+    }
+
+    .mini__polygon.bottom {
+        bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .mini__polygon img {
+        max-height: 100px;
+    }
+
+    .mini__polygon {
+        padding: 15px 60px;
+    }
+
+    .mini__polygon__title {
+        margin-top: 5px;
+    }
+
+    .mini__polygon__title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .mini__polygon__btn {
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
