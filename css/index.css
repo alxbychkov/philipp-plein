@@ -258,6 +258,9 @@
 
 .polygon__image {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .polygon__image__right {
@@ -420,11 +423,11 @@
 
     .polygon__block {
         margin: 0;
-        width: 33%;
+        width: 31%;
     }
 
     .polygon__image {
-        width: 63%;
+        width: 65%;
     }
 
     .background__polygon {
