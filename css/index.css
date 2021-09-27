@@ -400,6 +400,11 @@
         bottom: 10%;
         left: 50%;
         transform: translateX(-50%);
+        transition: .3s;
+    }
+
+    .swiper-slide:hover .wrapper-link-model .link-bottom {
+        bottom: 7%;
     }
 
     .mini__polygon__btn {
